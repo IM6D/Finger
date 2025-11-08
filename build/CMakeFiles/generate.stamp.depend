@@ -1,0 +1,40 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake
+C:/dev/FingerGame/Finger/CMakeLists.txt
+C:/dev/FingerGame/Finger/build/CMakeFiles/4.2.0-rc2/CMakeCXXCompiler.cmake
+C:/dev/FingerGame/Finger/build/CMakeFiles/4.2.0-rc2/CMakeRCCompiler.cmake
+C:/dev/FingerGame/Finger/build/CMakeFiles/4.2.0-rc2/CMakeSystem.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLConfig.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLConfigVersion.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLGraphicsSharedTargets-debug.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLGraphicsSharedTargets-release.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLGraphicsSharedTargets.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLSystemSharedTargets-debug.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLSystemSharedTargets-release.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLSystemSharedTargets.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLWindowSharedTargets-debug.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLWindowSharedTargets-release.cmake
+C:/dev/vcpkg/vcpkg/installed/x64-windows/share/sfml/SFMLWindowSharedTargets.cmake
+C:/dev/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake

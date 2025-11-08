@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\FingerGame\Finger\build\CMakeFiles\465b9a9bf171206693df3841dfe1a2a2\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{39FB09E6-0666-3FE0-AEE4-31EBEC921D63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

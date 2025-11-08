@@ -1,0 +1,3 @@
+C:/dev/FingerGame/Finger/build/CMakeFiles/app.dir
+C:/dev/FingerGame/Finger/build/CMakeFiles/ALL_BUILD.dir
+C:/dev/FingerGame/Finger/build/CMakeFiles/ZERO_CHECK.dir

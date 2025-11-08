@@ -1,7 +1,8 @@
 #include "master.h"
 
-bool GameCode::playerHasHands() {return User.getRight() || User.getLeft() != 0; }
-bool GameCode::cpuHasHands() {return CPU.getRight() || CPU.getLeft() != 0; }
+// Use the global User and CPU that master.h declares
+bool GameCode::playerHasHands() { return (User.getRight() != 0) || (User.getLeft() != 0); }
+bool GameCode::cpuHasHands() { return (CPU.getRight() != 0) || (CPU.getLeft() != 0); }
 
 void GameCode::start()
 {
@@ -13,51 +14,59 @@ void GameCode::start()
 
 void GameCode::gameLoop()
 {
-    Player Player;
-    Enemy Enemy;
-    cout << "New Game, Player goes first: " << endl << endl;
-    while (gameRunning)
+    // Show current state
+    cout << "\n=== Current Hands ===\n";
+    cout << "You  -> L:" << User.getLeft() << " R:" << User.getRight() << '\n';
+    cout << "CPU  -> L:" << CPU.getLeft() << " R:" << CPU.getRight() << '\n';
+    cout << "=====================\n\n";
+
+    // Player turn
+    if (playerHasHands())
     {
-        cout << "Your hand(s):               Opponent hand(s):" << endl;
-        cout << "L:" << Player.getLeft() << " R:" << Player.getRight() << "                     " << "L:" << Enemy.getLeft() << " R:" << Enemy.getRight() << endl << endl;
-        if (playerHasHands() && cpuHasHands())
-        {
         User.playerTurn();
-        if (Enemy.getLeft() == maxHandValue)
+
+        // If CPU hit exactly 5 on a hand, eliminate it
+        if (CPU.getLeft() == maxHandValue)
         {
-            cout << "Enemy Left Hand Eliminated!" << endl;
-            Enemy.setLeft(0);
+            cout << "Enemy Left Hand Eliminated!\n";
+            CPU.setLeft(0);
         }
-        else if (Enemy.getRight() == maxHandValue)
+        if (CPU.getRight() == maxHandValue)
         {
-            cout << "Enemy Right Hand Eliminated!" << endl;
-            Enemy.setRight(0);
+            cout << "Enemy Right Hand Eliminated!\n";
+            CPU.setRight(0);
         }
-        else if (!cpuHasHands())
+
+        if (!cpuHasHands())
         {
-            cout << "Player Wins!" << endl;
+            cout << "You Win!\n";
+            gameRunning = false;
             return;
         }
-        }
+    }
 
+    // CPU turn
+    if (cpuHasHands())
+    {
+        CPU.cpuTurn();
 
-        Enemy.cpuTurn();
-
-        if (Player.getLeft() == maxHandValue)
+        // If YOU hit exactly 5 on a hand, eliminate it
+        if (User.getLeft() == maxHandValue)
         {
-            cout << "Your Left Hand Has Been Eliminated!" << endl;
-            Player.setLeft(0);
+            cout << "Your Left Hand Has Been Eliminated!\n";
+            User.setLeft(0);
         }
-        else if (Player.getRight() == maxHandValue)
+        if (User.getRight() == maxHandValue)
         {
-            cout << "Your Right Hand Has Been Eliminated!" << endl;
-            Player.setRight(0);
+            cout << "Your Right Hand Has Been Eliminated!\n";
+            User.setRight(0);
         }
+
         if (!playerHasHands())
         {
-            cout << "Computer Wins!" << endl;
+            cout << "Computer Wins!\n";
+            gameRunning = false;
             return;
         }
     }
 }
-
